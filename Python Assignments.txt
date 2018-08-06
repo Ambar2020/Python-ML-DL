@@ -1,0 +1,72 @@
+1 You are given a dictionary called clubs where each key is the name of a club (a string),and each value is the set of id strings for the students in the club. 
+
+Write a segment of Python code that creates a set of all student ids (if any) that are in all the clubs in the dictionary
+
+
+2 Given a dictionary that associates the names of states with a list of the names of (some of the) cities that appear in it, write a program that creates a new dictionary that associates the name of 
+a city with the list of states that it appears in. Within the function, output the cities that are unique — they appear in only one state. 
+Do this in alphabetical order. 
+As an example, if the ?rst dictionary looks like
+
+states = {'New Hampshire': ['Concord', 'Hanover'],
+'Massachusetts': ['Boston', 'Concord', 'Springfield']
+,'Illinois': ['Chicago', 'Springfield', 'Peoria']}
+
+
+cities = {'Hanover': ['New Hampshire'],
+ 'Chicago': ['Illinois'],'Boston': ['Massachusetts'], 
+ 'Peoria': ['Illinois'],'Concord': ['New Hampshire', 'Massachusetts'],Springfield': ['Massachusetts', 'Illinois']}
+
+and the four unique cities output should be Boston Chicago Hanover Peoria
+
+
+3 You are given three sentences in three strings str1,str2,str3. Assume the sentences contain no punctuation and have a single space between the words. Write a piece of code that prints the following:
+(a) The set of words that appear in str1 but not in str2 and not in str3. (b) The set of words that appear in all three sentences. (c) The set of words that appear in exactly two of the three sentences (hint. if you found words in str1 and str2, but not in str3, that would be a third of the job!).
+Remember, words are not case sensitive. For example, if you are given the sentences:
+str1 = "Hail dear old Rensselaer the college of our heart" str2 = "For dear old Rensselaer we all must do our part" str3 = "True to old Rensselaer we will always strive to be"
+Your code should print (order of the words is not important):
+a)	set(['heart', 'the', 'college', 'hail', 'of']) b) set(['old', 'rensselaer']) c) set(['dear', 'our', 'we'])
+
+4 Write a function called smallest_in_common that takes two di?erent lists, both in increasing order, and returns the smallest value that appears in both lists. Importantly, you may not use a set, and you may not use a dictionary (these lead to simple code, but does more work than necessary). The most credit will be given for solutions that scan through each list no more than once. For example, if
+l1 = [ 1, 3, 8, 12, 12, 15, 20 ] l2 = [ 7, 9, 10, 11, 15, 30, 35 ] l3 = [ 2, 4, 5, 13, 16, 17, 23, 25 ]
+then
+print smallest_in_common(l1,l2) # should output 15 print smallest_in_common(l1,l3) # should output None
+
+5 Write a program, which will find all such numbers between 1000 and 3000 (both included) such that each digit of the number is an even number.The numbers obtained should be printed in a comma-separated sequence on a single line.
+
+6 Write a program that accepts a sequence of whitespace separated words as input and prints the words after removing all duplicate words and sorting them alphanumerically.
+Suppose the following input is supplied to the program:
+hello world and practice make perfect and hello world again
+Then, the output should be:
+again and hello makes perfect practice world
+
+7 Write a Python program to match key values in two dictionaries. Go to the editor¶
+Sample dictionary: {'key1': 1, 'key2': 3, 'key3': 2}, {'key1': 1, 'key2': 2}
+Expected output: key1: 1 is present in both x and y
+
+8 Write a Python program to create a dictionary from a string.
+•	Note: Track the count of the letters from the string.
+•	Sample string : 'w3resource'
+•	Expected output: {'3': 1, 's': 1, 'r': 2, 'u': 1, 'w': 1, 'c': 1, 'e': 2, 'o': 1}
+
+9 Given three sets, s1, s2, and s3, write a short segment of Python code to find the values that are in
+exactly one of the three sets. The result should be stored in a set called s.
+
+10 You need to write a function to implement an algorithm which will accept a string of characters and should find the highest occurrence of the character and display it.
+ For example if input is "aaaaaaaaaaaaaaaaabbbbcddddeeeeee" it should return "a".
+
+11 Consider a data, where just the name of the restaurant, the type of restaurant, and the ratings are provided. Assume these values have already been read into a list of lists of the form below:
+restaurants = [ [ Acme, Italian, 2, 4, 3, 5],[ Flintstone, Steak, 5, 2, 4, 3, 3, 4],[ Bella Troy, Italian, 1, 4, 5] ]
+Write a segment of Python code that prints all Italian restaurants in the restaurants list that have no ratings of value 1 and at least one rating of value 5. In the above example, Acme would be printed in the output, but Flintstone and Bella Troy would not. Flintstone is not Italian and Bella Troy has a 1 rating. 
+
+12 Suppose a list of words in alphabetical order has been assigned to the variable called words. For example,
+we might have the assignment words = [ aardvark , abaka, expedite, experience, shoetrees, tastetest, test ]
+Write code to find and output the first and the last string in words that start and end with the same letter and are at least 8 characters long. You may assume that at least one word in words satisfies this condition. You may write a function if you wish. For the above example, the output should be
+
+6
+expedite
+tastetest
+
+
+
+
